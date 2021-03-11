@@ -1,0 +1,12 @@
+body {
+  background-color: $body-background-c;
+  overflow-x: hidden;
+  @include antialiasing;
+
+  font-family: "Poppins", sans-serif;
+}
+
+.logo {
+  margin: 0 auto;
+  display: block;
+}

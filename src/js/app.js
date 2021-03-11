@@ -1,6 +1,8 @@
-import '../scss/app.scss';
+import '../scss/app.scss'
+import gsap from 'gsap'
+import './vendors/animations'
 
 /* Your JS Code goes here */
 
 /* Demo JS */
-import './demo.js';
+import './nav.js'
