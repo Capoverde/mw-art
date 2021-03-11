@@ -1,0 +1,20 @@
+/*
+    SOCIAL MEDIA
+    ================================================ */
+
+.media {
+  &__list {
+    position: absolute;
+    bottom: 250px;
+    left: -10%;
+    @include rotate(z, -90deg);
+  }
+
+  &__item {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    display: inline-block;
+    padding: 0 30px;
+  }
+}

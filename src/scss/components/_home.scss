@@ -1,18 +1,67 @@
 /*
-    SOCIAL MEDIA
-    ================================================* /
-
-
-
-    
-
-/*
     TEXT
     ================================================ */
 
+.text__box {
+    position: absolute;
+    top: 200px;
+    left: 20px;
+    @include rotate(z, -90deg);
+
+    h1,
+    h3 {
+        font-size: 120px;
+        text-transform: uppercase;
+        font-weight: 900;
+        letter-spacing: -10px;
+    }
+    h3 {
+        margin-top: -90px;
+        margin-left: 30px;
+        -webkit-text-fill-color: $body-background-c; /* Will override color (regardless of order) */
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: $hero-c;
+        letter-spacing: -8px;
+    }
+
+    h1 {
+        &::after {
+            content: "m.w. art";
+            position: absolute;
+            top: 40px;
+            right: -39px;
+            color: #9b1161;
+            opacity: 0.5;
+        }
+    }
+
+    p.text {
+        width: 200px;
+        margin-top: -20px;
+        margin-left: 50px;
+        font-size: 12px;
+        font-weight: 500;
+    }
+}
+
 /*
-    SPONSOR
+    PROFFESSION
     ================================================ */
+
+.proffession {
+    position: absolute;
+    top: 42%;
+    left: 80%;
+    @include rotate(z, -90deg);
+    width: 359px;
+    height: 260px;
+
+    h2 {
+        font-size: 3em;
+        font-weight: 900;
+        margin-top: -37px;
+    }
+}
 
 /*
     DISTORTION

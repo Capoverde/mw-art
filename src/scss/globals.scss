@@ -1,4 +1,5 @@
 body {
+  position: relative;
   background-color: $body-background-c;
   overflow-x: hidden;
   @include antialiasing;
@@ -21,4 +22,12 @@ body {
 .logo {
   margin: 0 auto;
   display: block;
+}
+
+a {
+  color: inherit;
+  @include transition(color, 0.35s);
+  &:hover {
+    color: $hero-c;
+  }
 }
