@@ -1,0 +1,109 @@
+/*
+    NAVBAR
+    ================================================ */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+
+  & > div {
+    padding: 0 30px;
+    font-size: 20px;
+  }
+
+  &__menu {
+    margin-right: auto;
+    margin-left: 30px;
+    z-index: 1000;
+  }
+
+  &__lang {
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+}
+
+//###################################################
+//#################    hamburger     ################
+//##################################################
+
+.navbar__menu-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: $menu-btn-width;
+  height: $menu-btn-height;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+
+  &__burger {
+    width: $burger-width;
+    height: $burger-height;
+    background: $main-c;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+    transition: all 0.5s ease-in-out;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: $burger-width;
+      height: $burger-height;
+      background: $main-c;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+      transition: all 0.5s ease-in-out;
+    }
+
+    &::before {
+      transform: translateY(-4px);
+      -webkit-transform: translateY(-4px);
+      -moz-transform: translateY(-4px);
+      -ms-transform: translateY(-4px);
+      -o-transform: translateY(-4px);
+    }
+
+    &::after {
+      transform: translateY(4px);
+      -webkit-transform: translateY(4px);
+      -moz-transform: translateY(4px);
+      -ms-transform: translateY(4px);
+      -o-transform: translateY(4px);
+    }
+  }
+}
+
+//================
+//  JS class:
+//================
+
+.navabr__menu-btn.open .navbar__menu-btn__burger {
+  transform: translateX(-50px);
+  -webkit-transform: translateX(-50px);
+  -moz-transform: translateX(-50px);
+  -ms-transform: translateX(-50px);
+  -o-transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+
+  &::before {
+    transform: rotate(45deg) translate(35px, -35px);
+    -webkit-transform: rotate(45deg) translate(35px, -35px);
+    -moz-transform: rotate(45deg) translate(35px, -35px);
+    -ms-transform: rotate(45deg) translate(35px, -35px);
+    -o-transform: rotate(45deg) translate(35px, -35px);
+  }
+
+  &::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+    -webkit-transform: rotate(-45deg) translate(35px, 35px);
+    -moz-transform: rotate(-45deg) translate(35px, 35px);
+    -ms-transform: rotate(-45deg) translate(35px, 35px);
+    -o-transform: rotate(-45deg) translate(35px, 35px);
+  }
+}

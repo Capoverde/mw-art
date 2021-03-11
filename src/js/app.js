@@ -4,5 +4,5 @@ import './vendors/animations'
 
 /* Your JS Code goes here */
 
-/* Demo JS */
+/* Nav JS */
 import './nav.js'

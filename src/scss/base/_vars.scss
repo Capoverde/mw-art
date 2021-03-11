@@ -10,10 +10,17 @@
 $black: #000;
 $white: #fff;
 
-$body-background-c: $white;
+$body-background-c: #d8dbe2;
 $main-c: #333;
 $hero-c: #9b1161;
 $accent-c: #464646;
 $link-c: $accent-c;
 
 /* Components */
+
+// hamburger
+$menu-btn-width: 25px;
+$menu-btn-height: 25px;
+
+$burger-width: 20px;
+$burger-height: 1px;
